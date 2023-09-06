@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import { MapInteractionCSS } from "react-map-interaction";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <MapInteractionCSS>
+          <img src={logo} className="App-logo" alt="logo" />
+        </MapInteractionCSS>
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
