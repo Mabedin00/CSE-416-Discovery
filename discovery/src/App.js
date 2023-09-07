@@ -1,6 +1,4 @@
 import logo from './logo.svg';
-import FileUpload from './components/FileUpload.js';
-import Map from './components/Map.js';
 import './App.css';
 import StartScreen from './components/StartScreen.js'
 
