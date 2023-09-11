@@ -96,18 +96,18 @@ function MapView() {
     const handleGeoJSONData = (data) => {
         const bounds = L.geoJSON(data).getBounds();
         setInitialCenter(bounds.getCenter());
-        if (mapRef.current) {
-        mapRef.current.leafletElement.fitBounds(bounds);
+        if (mapRef.current && mapRef.current.leafletElement) {
+            mapRef.current.leafletElement.fitBounds(bounds);
         }
         setGeojsonData(data);
     };
 
     function MapInstance() {
         const map = useMap();
-        if (geojsonData && mapRef.current !== map) {
-        const bounds = L.geoJSON(geojsonData).getBounds();
-        map.fitBounds(bounds);
-        mapRef.current = map;
+        if (geojsonData) {
+            const bounds = L.geoJSON(geojsonData).getBounds();
+            map.fitBounds(bounds);
+            mapRef.current = map;
         }
         return null;
     }
