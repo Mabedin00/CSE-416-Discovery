@@ -1,6 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import StartScreen from './components/StartScreen.js'
+import MapView from './components/MapView.js'
+import 'leaflet/dist/leaflet.css';
+
 
 import React, { useState } from 'react';
 
@@ -15,7 +17,7 @@ function App() {
   return (
     <div className="App">
       {/* <StartScreen/> */}
-      <StartScreen/>
+      <MapView/>
     </div>
   );
 }

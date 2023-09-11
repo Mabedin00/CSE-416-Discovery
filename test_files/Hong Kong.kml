@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Hong Kong</name>
+    <description/>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-795548-nodesc-normal">
+      <IconStyle>
+        <color>ff485579</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-795548-nodesc-highlight">
+      <IconStyle>
+        <color>ff485579</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-795548-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-795548-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-795548-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-E65100-nodesc-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-E65100-nodesc-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Housing</name>
+      <Placemark>
+        <name>Airbnb Option 1 ($750)</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1855418,22.3084149,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Airbnb Option 2 ($450)</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1842499,22.2702383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Activities</name>
+      <Placemark>
+        <name>Victoria Peak</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.145532,22.2758835,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mong Kok</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.169773,22.3203648,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Ladies' Market]]></name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1709284,22.317609,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sik Sik Yuen Wong Tai Sin Temple</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1932582,22.3427257,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chi Lin Nunnery</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.205352,22.3407143,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nan Lian Garden</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.2045149,22.3396114,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Repulse Bay Beach</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1963252,22.2367659,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stanley Main Beach</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.2142979,22.2202058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Dragon's Back]]></name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.2418778,22.2394669,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yuen Po Street Bird Garden</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1736528,22.3255529,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Aquarium, Ocean Park Aqua City</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1746826,22.2458385,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Sam's Tailor]]></name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1723203,22.2992176,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Avenue Of Stars</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1764939,22.2957338,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Star Ferry Pier</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1682268,22.29381,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Garden of Stars</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1759033,22.2965215,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Water World Ocean Park Hong Kong</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1680503,22.2355883,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Big Wave Bay Beach</name>
+        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.247163,22.246575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Food </name>
+      <Placemark>
+        <name>Temple Street Night Market</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1699805,22.3065185,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fairwood</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1706768,22.3169345,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lan Kwai Fong</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1554776,22.2810697,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Happy Lamb Hot Pot</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1726818,22.3169274,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ming Court (Mong Kok)</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.168112,22.318175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Haidilao Hot Pot (Yau Ma Tei)</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1701775,22.3141684,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gyu-Kaku</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1721209,22.3006559,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kai Kai Dessert</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            114.1710799,22.3065554,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
