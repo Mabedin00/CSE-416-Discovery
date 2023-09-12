@@ -1,5 +1,4 @@
 import './App.css';
-import StartScreen from './components/StartScreen.js'
 import MapView from './components/MapView.js'
 import TestMap from './components/TestMap.js';
 
