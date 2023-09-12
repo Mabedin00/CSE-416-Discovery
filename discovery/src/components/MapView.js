@@ -123,7 +123,8 @@ function MapView() {
   const onEachFeature = (feature, layer) => {
     if (feature.properties) {
         console.log(feature.properties);
-      let popupContent = "";
+      let popupContent = "<div>";
+
       if (feature.properties.name) {
         popupContent += `<strong>${feature.properties.name}</strong><br>`;
       } else if (feature.properties.NAME) {
@@ -132,22 +133,21 @@ function MapView() {
       if (feature.properties.image) {
         popupContent += `<img src="${feature.properties.image}" alt="${feature.properties.name}" style="width:100%;"><br>`;
       }
-
-      if (feature.properties.description) {
-        popupContent += `${feature.properties.description}<br>`;
-      } else {
-            popupContent += '<p>Extra Info:</p><table>';
-            for (let key in feature.properties) {
-            if (feature.properties.hasOwnProperty(key) && key.toLowerCase() !== 'name' && feature.properties[key] != null) {
+    let bannedKeys = ["name", "NAME", "styleUrl", "styleHash", "styleMapHash"];
+    if (Object.keys(feature.properties).filter(item => !bannedKeys.includes(item)).length) {
+        popupContent += '<p>Extra Info:</p><table>';
+        for (let key in feature.properties) {
+            console.log(key);
+            if (feature.properties.hasOwnProperty(key) && !bannedKeys.includes(key) && feature.properties[key] != null) {
                 popupContent += '<tr>';
                     popupContent += `<td>${key}</td>`;
                     popupContent += `<td>${feature.properties[key]}</td>`;
                 popupContent += '</tr>';
             }
-            }
-            popupContent += '</table>';
-      }
-
+        }
+        popupContent += '</table>';
+    }
+      popupContent += '</div>';
       layer.bindPopup(popupContent);
     }
   };
