@@ -122,22 +122,22 @@ function MapView() {
 
   const onEachFeature = (feature, layer) => {
     if (feature.properties) {
-        console.log(feature.properties);
+        // console.log(feature.properties);
       let popupContent = "<div>";
 
       if (feature.properties.name) {
-        popupContent += `<strong>${feature.properties.name}</strong><br>`;
+        popupContent += `<strong>${feature.properties.name}</strong><hr>`;
       } else if (feature.properties.NAME) {
-        popupContent += `<strong>${feature.properties.NAME}</strong><br>`;
+        popupContent += `<strong>${feature.properties.NAME}</strong><hr>`;
       }
       if (feature.properties.image) {
         popupContent += `<img src="${feature.properties.image}" alt="${feature.properties.name}" style="width:100%;"><br>`;
       }
-    let bannedKeys = ["name", "NAME", "styleUrl", "styleHash", "styleMapHash"];
+      
+    let bannedKeys = ["name", "NAME", "styleUrl", "styleHash", "styleMapHash"]; //properties to not include in popups
     if (Object.keys(feature.properties).filter(item => !bannedKeys.includes(item)).length) {
         popupContent += '<p>Extra Info:</p><table>';
         for (let key in feature.properties) {
-            console.log(key);
             if (feature.properties.hasOwnProperty(key) && !bannedKeys.includes(key) && feature.properties[key] != null) {
                 popupContent += '<tr>';
                     popupContent += `<td>${key}</td>`;
