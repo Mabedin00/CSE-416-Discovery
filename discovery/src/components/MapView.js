@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import L from "leaflet";
+import L, { popup } from "leaflet";
 import {
   MapContainer,
   TileLayer,
@@ -19,7 +19,7 @@ function MapView() {
   const [geojsonData, setGeojsonData] = useState(null);
 
   const mapRef = useRef(null);
-  
+
   delete L.Icon.Default.prototype._getIconUrl;
   L.Icon.Default.mergeOptions({
     iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
@@ -122,17 +122,30 @@ function MapView() {
 
   const onEachFeature = (feature, layer) => {
     if (feature.properties) {
+        console.log(feature.properties);
       let popupContent = "";
       if (feature.properties.name) {
         popupContent += `<strong>${feature.properties.name}</strong><br>`;
+      } else if (feature.properties.NAME) {
+        popupContent += `<strong>${feature.properties.NAME}</strong><br>`;
       }
-
       if (feature.properties.image) {
         popupContent += `<img src="${feature.properties.image}" alt="${feature.properties.name}" style="width:100%;"><br>`;
       }
 
       if (feature.properties.description) {
         popupContent += `${feature.properties.description}<br>`;
+      } else {
+            popupContent += '<p>Extra Info:</p><table>';
+            for (let key in feature.properties) {
+            if (feature.properties.hasOwnProperty(key) && key.toLowerCase() !== 'name' && feature.properties[key] != null) {
+                popupContent += '<tr>';
+                    popupContent += `<td>${key}</td>`;
+                    popupContent += `<td>${feature.properties[key]}</td>`;
+                popupContent += '</tr>';
+            }
+            }
+            popupContent += '</table>';
       }
 
       layer.bindPopup(popupContent);
