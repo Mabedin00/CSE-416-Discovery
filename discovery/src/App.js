@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App">
       {/* <StartScreen/> */}
-      {/* <MapView/> */}
-      { <TestMap/> }
+      <MapView/>
+      {/* { <TestMap/> } */}
     </div>
   );
 }

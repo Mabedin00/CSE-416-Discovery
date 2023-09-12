@@ -7,19 +7,19 @@ import {
   useMap,
   Marker,
 } from "react-leaflet";
+
 import "leaflet/dist/leaflet.css";
 import toGeoJSON from "@mapbox/togeojson";
 import "leaflet/dist/images/marker-shadow.png";
 import { ZipReader } from "@zip.js/zip.js";
 import { BlobReader, Uint8ArrayWriter } from "@zip.js/zip.js";
-import JSZip from "jszip";
 import shpjs from "shpjs";
 
 function MapView() {
   const [geojsonData, setGeojsonData] = useState(null);
-  const [initialCenter, setInitialCenter] = useState([51.505, -0.09]);
 
   const mapRef = useRef(null);
+  
   delete L.Icon.Default.prototype._getIconUrl;
   L.Icon.Default.mergeOptions({
     iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
@@ -114,7 +114,6 @@ function MapView() {
 
   const handleGeoJSONData = (data) => {
     const bounds = L.geoJSON(data).getBounds();
-    setInitialCenter(bounds.getCenter());
     if (mapRef.current && mapRef.current.leafletElement) {
       mapRef.current.leafletElement.fitBounds(bounds);
     }
@@ -155,7 +154,7 @@ function MapView() {
       <input type="file" onChange={onFileChange} />
       {geojsonData && (
         <MapContainer
-          center={initialCenter}
+          center={[0,0]}
           zoom={13}
           style={{ width: "100%", height: "100%" }}
         >
