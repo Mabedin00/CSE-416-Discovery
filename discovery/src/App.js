@@ -1,6 +1,8 @@
 import './App.css';
 import StartScreen from './components/StartScreen.js'
 import MapView from './components/MapView.js'
+import TestMap from './components/TestMap.js';
+
 import 'leaflet/dist/leaflet.css';
 
 
@@ -17,7 +19,8 @@ function App() {
   return (
     <div className="App">
       {/* <StartScreen/> */}
-      <MapView/>
+      {/* <MapView/> */}
+      { <TestMap/> }
     </div>
   );
 }
